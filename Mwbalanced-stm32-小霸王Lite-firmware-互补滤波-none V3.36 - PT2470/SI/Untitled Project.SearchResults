@@ -1,0 +1,10 @@
+---- SoftTimer Matches (10 in 3 files) ----
+Main.c (user):	if(SoftTimer[0])return;
+Main.c (user):		SoftTimer[0] = 1000;
+Main.c (user):		if(SoftTimer[0] == 0)
+Main.c (user):			SoftTimer[0] = 20;
+Main.c (user):		if(SoftTimer[1] == 0)
+Main.c (user):			SoftTimer[1] = 20;
+Systick.c (user\src):unsigned short SoftTimer[5] = {0, 0, 0, 0, 0};
+Systick.c (user\src):		if(SoftTimer[i] > 0)SoftTimer[i]--;
+Systick.h (user\inc):extern unsigned short SoftTimer[5];
